@@ -1,0 +1,41 @@
+<h3>Create an Account</h3>
+<form (ngSubmit)="onSubmit()" class="ui form" [formGroup]="signupForm">
+  <app-input
+    inputType="text"
+    label="UserName"
+    [control]="$any(signupForm.get('username'))">
+  </app-input>
+  <app-input
+    inputType="password"
+    label="Password"
+    [control]="$any(signupForm.get('password'))">
+  </app-input>
+  <app-input
+    inputType="password"
+    label="Password Confirmation"
+    [control]="$any(signupForm.get('passwordConfirmation'))">
+  </app-input>
+  <div
+    class="ui red basic label"
+    *ngIf="
+    this.signupForm.get('password')?.touched &&
+    this.signupForm.get('passwordConfirmation')?.touched &&
+    this.signupForm.errors
+    "
+  >
+    <p *ngIf="this.signupForm.errors?.passwordDonMatch">
+      password and passwordConfirmation must match
+    </p>
+    <p *ngIf="this.signupForm.errors?.noConnection">
+      no network connection
+    </p>
+    <p *ngIf="this.signupForm.errors?.otherError">
+      please reach the officer
+    </p>
+  </div>
+  <button class="ui submit button primary">
+    Submit
+  </button>
+  <br>
+  <!-- {{ this.signupForm.errors | json }} -->
+</form>
