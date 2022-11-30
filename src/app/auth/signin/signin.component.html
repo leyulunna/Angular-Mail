@@ -1,4 +1,15 @@
-<h3>Sign in Angular Email</h3>
+<h3>Sign in Angular Mail</h3>
+<div *ngIf="showMessage" class="ui message">
+  <i (click)="close()" class="close icon"></i>
+  <div class="header">
+    Don't have an account yet?
+    <a rel="noreferrer" routerLink="/signup" routerLinkActive="active"> Sign Up</a>
+  </div>
+  <p>
+    Or visit github to
+    <a className="fab fa-github" rel="noreferrer" href="https://github.com/leyulunna/Angular-Mail" target="_blank">learn more</a>
+  </p>
+</div>
 <form (ngSubmit)="onSubmit()" class="ui form" [formGroup]="signinForm">
   <app-input
     inputType="text"

@@ -1,27 +1,27 @@
-# EmailClient
+# Angular Mail
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+An email application using Typescript and AngularJS that provides functionality for sending and retrieving emails
 
-## Development server
+## Functionalities
+* Sign up with username and password to create an Angular Mail account
+* Sign in Angular Mail with username and password
+* Click "Compose" to create your first email
+* Click "Reply" to reply inbox emails
+* View inbox emails
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies
+Project is created with:
+1. AngularJS
+2. RxJS
+3. TypeScript
+4. Deployed by Netlify
 
-## Code scaffolding
+## Setup
+1. Clone the porject from GitHub.
+2. `npm install`.
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+4. Sign in with preset username "goodday777" and password "Password" to play around or sign up a new account.
+5. Hope you enjoy it :).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Image
+![Imgur](https://i.imgur.com/okyqdha.png)

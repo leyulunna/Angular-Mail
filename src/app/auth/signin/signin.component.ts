@@ -15,6 +15,8 @@ export class SigninComponent implements OnInit {
     private router: Router
   ) { }
 
+  showMessage = true;
+
   signinForm = new FormGroup({
     username: new FormControl('', [
       Validators.required,
@@ -46,6 +48,10 @@ export class SigninComponent implements OnInit {
         }
       }
     });
+  }
+
+  close(): void {
+    this.showMessage = false;
   }
 
 }
